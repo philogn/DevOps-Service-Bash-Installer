@@ -1,0 +1,13 @@
+sudo apt update -y
+sudo apt install ca-certificates curl openssh-server postfix tzdata perl -y
+curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+sudo apt install gitlab-ce
+
+echo
+echo
+echo
+echo
+echo
+
+sudo gitlab-ctl reconfigure
+
